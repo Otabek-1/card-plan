@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background-color: #E0E8FF;
+      
+    }
+    .background{
+      width: 1535px;
+      height: max-content;
+      position:absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    
+    }
+    .box{
+      height: 535px;
+      width: 343px;
+      background-color: #FFF;
+      border-radius: 10px;
+      margin: 100px auto;
+      overflow: hidden;
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+    }
+
+    .photo{
+      width: 343px;
+    }
+
+    .title{
+      margin-top: 40px;
+      color: #1E2A50;
+      font-family: sans-serif;
+    }
+    .desc{
+      color: #858A9F;
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    .plan {
+      width: 278px;
+      height: 80px;
+      background-color: #F8F9FE;
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+      margin-top: 20px;
+      padding: 0px 20px;
+      
+}
+
+.plan-pr {
+  margin-left: 20px;
+}
+.annual {
+  color: #1E2A50;
+  font-family: sans-serif;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.pr {
+  color: #858A9F;
+  font-family: sans-serif;
+}
+.change{
+  color: #382AE1;
+  margin-left: 30px;
+  transition: .5s;
+}
+
+.change:hover{
+  text-decoration: none;
+}
+
+.next{
+ 
+  background-color: #382AE1;
+  border-radius: 10px;
+  color: #FFF;
+  font-family: sans-serif;
+  box-shadow:0px 10px 5px rgb(201, 200, 200);
+  text-decoration: none;
+  max-width: 278px;
+  width: 100%;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  align-items: center;
+  margin-top: 20px;
+  transition: .5s;
+}
+.next:hover{
+  background-color: #766CF1;
+}
+
+.cancel{
+  color: #858A9F;
+  text-decoration: none;
+  font-family: sans-serif;
+  margin-top: 10px;
+  transition: .5s;
+}
+.cancel:hover{
+  color: #1E2A50;
+}
+  </style>
+</head>
+<body>
+<img src="./images/pattern-background-desktop.svg" alt="" class="background">
+
+<div class="box">
+  <img src="./images/illustration-hero.svg" alt="" class="photo">
+
+  <h1 class="title">Order summary</h1>
+
+  <p class="desc">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+
+  <div class="plan">
+    <img src="./images/icon-music.svg" alt="" class="music">
+    <div class="plan-pr">
+      <div class="annual">Annual Plan</div>
+      <p class="pr">$59.99/year</p>
+    </div>
+    <a href="#!" class="change">Change</a>
+  </div>
+
+  <a href="#!" class="next">Proceed to Payment</a>
+
+  <a href="#!" class="cancel">Cancel Order</a>
+</div>
+</body>
+</html>
